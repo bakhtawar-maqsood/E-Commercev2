@@ -26380,3 +26380,164 @@ Call stack
   /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3320393550641692622_45120'
   /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__3827907591895787666_45100'
 
+2021-09-21 01:13:37[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_30700'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_30700'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_30680'
+
+2021-09-21 01:13:37[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_30700'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_30700'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_30680'
+
+2021-09-21 01:13:44[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_31980'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_31980'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_31960'
+
+2021-09-21 01:13:44[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_31980'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_31980'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_31960'
+
+2021-09-21 01:13:49[WARN] user: dev
+GET /?search_term=shirt
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_32460'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_32460'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_32440'
+
+2021-09-21 01:13:59[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_32940'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_32940'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_32920'
+
+2021-09-21 01:13:59[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_32940'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_32940'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_32920'
+
+2021-09-21 01:14:05[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_33360'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_33360'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_33340'
+
+2021-09-21 01:14:05[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_33360'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_33360'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_33340'
+
+2021-09-21 01:14:06[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___56651077156542733_33480'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___56651077156542733_33480'
+
+2021-09-21 01:14:10[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___56651077156542733_33840'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___56651077156542733_33840'
+
+2021-09-21 01:14:14[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_34060'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_34060'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_34040'
+
+2021-09-21 01:14:14[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___1035769797544887653_34060'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___1035769797544887653_34060'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2178705117544648157_34040'
+
+2021-09-21 01:14:16[WARN] user: dev
+GET /products/8
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___56651077156542733_34280'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___56651077156542733_34280'
+
+2021-09-21 01:14:19[WARN] user: dev
+GET /products/8
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Test-Project-ECommerce/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___56651077156542733_34620'
+  /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___56651077156542733_34620'
+
