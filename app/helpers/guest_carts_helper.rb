@@ -1,0 +1,2 @@
+module GuestCartsHelper
+end

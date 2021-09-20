@@ -1,0 +1,46 @@
+[Thu Sep 16 14:18:06.043 2021] [17881] watchdog: main process 17882 forked ok
+[Thu Sep 16 14:18:06.044 2021] [17882] listening on 127.0.0.1:9306
+[Thu Sep 16 14:18:06.044 2021] [17882] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 14:18:06.044 2021] [17882] accepting connections
+[Thu Sep 16 14:21:20.555 2021] [17882] caught SIGTERM, shutting down
+[Thu Sep 16 14:21:20.656 2021] [17882] shutdown complete
+[Thu Sep 16 14:21:20.659 2021] [17881] watchdog: main process 17882 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 14:25:34.099 2021] [19077] watchdog: main process 19078 forked ok
+[Thu Sep 16 14:25:34.100 2021] [19078] listening on 127.0.0.1:9306
+[Thu Sep 16 14:25:34.100 2021] [19078] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 14:25:34.100 2021] [19078] accepting connections
+[Thu Sep 16 14:27:21.455 2021] [19078] caught SIGTERM, shutting down
+[Thu Sep 16 14:27:21.598 2021] [19078] shutdown complete
+[Thu Sep 16 14:27:21.600 2021] [19077] watchdog: main process 19078 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 14:27:22.111 2021] [19224] watchdog: main process 19225 forked ok
+[Thu Sep 16 14:27:22.112 2021] [19225] listening on 127.0.0.1:9306
+[Thu Sep 16 14:27:22.112 2021] [19225] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 14:27:22.112 2021] [19225] accepting connections
+[Thu Sep 16 15:26:43.247 2021] [19225] caught SIGTERM, shutting down
+[Thu Sep 16 15:26:43.378 2021] [19225] shutdown complete
+[Thu Sep 16 15:26:43.380 2021] [19224] watchdog: main process 19225 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 15:26:56.408 2021] [20960] watchdog: main process 20961 forked ok
+[Thu Sep 16 15:26:56.409 2021] [20961] listening on 127.0.0.1:9306
+[Thu Sep 16 15:26:56.409 2021] [20961] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 15:26:56.410 2021] [20961] accepting connections
+[Thu Sep 16 15:27:52.246 2021] [20961] caught SIGTERM, shutting down
+[Thu Sep 16 15:27:52.307 2021] [20961] shutdown complete
+[Thu Sep 16 15:27:52.310 2021] [20960] watchdog: main process 20961 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 15:28:07.150 2021] [21119] watchdog: main process 21120 forked ok
+[Thu Sep 16 15:28:07.151 2021] [21120] listening on 127.0.0.1:9306
+[Thu Sep 16 15:28:07.151 2021] [21120] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 15:28:07.151 2021] [21120] accepting connections
+[Thu Sep 16 15:37:50.777 2021] [21120] caught SIGTERM, shutting down
+[Thu Sep 16 15:37:50.825 2021] [21120] shutdown complete
+[Thu Sep 16 15:37:50.827 2021] [21119] watchdog: main process 21120 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 15:37:51.341 2021] [23174] watchdog: main process 23175 forked ok
+[Thu Sep 16 15:37:51.344 2021] [23175] listening on 127.0.0.1:9306
+[Thu Sep 16 15:37:51.344 2021] [23175] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 15:37:51.344 2021] [23175] accepting connections
+[Thu Sep 16 15:38:01.564 2021] [23175] caught SIGTERM, shutting down
+[Thu Sep 16 15:38:01.664 2021] [23175] shutdown complete
+[Thu Sep 16 15:38:01.666 2021] [23174] watchdog: main process 23175 exited cleanly (exit code 0), shutting down
+[Thu Sep 16 15:38:07.440 2021] [23213] watchdog: main process 23214 forked ok
+[Thu Sep 16 15:38:07.441 2021] [23214] listening on 127.0.0.1:9306
+[Thu Sep 16 15:38:07.441 2021] [23214] WARNING: index 'product_core': preload: failed to open /home/dev/Documents/Test-Project-ECommerce/db/sphinx/development/product_core.sph: No such file or directory; NOT SERVING
+[Thu Sep 16 15:38:07.441 2021] [23214] accepting connections

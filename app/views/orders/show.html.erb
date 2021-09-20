@@ -1,0 +1,46 @@
+
+<h1 class="display-4 text-c">My Cart</h1>
+<% if  @order_items.present?%>
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Product name</th>
+      <th>Product serial no</th>
+      <th>Product price</th>
+      <th colspan="2"></th>
+       <th>Quantity</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @order_items.each do |order_item| %>
+    <% item = Product.find(order_item.product_id)%>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.serial_no %></td>
+        <td><%= number_to_currency(item.price, precision:3 ) %></td>
+        <td><%= link_to 'Show', item , class:"btn btn-primary"%></td>
+        <td><%= link_to 'Delete', user_order_path(product_id: item.id) , method: :delete, class:"btn btn-danger" %></td>
+        <td>
+            <%= form_with(url: user_order_path(@order), method: :patch) do |form| %>
+              <%=form.number_field :quantity, value: order_item.quantity %>
+              <p>
+                <%= form.submit%>
+              </p>
+            <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+<p class="p d-inline">Total Cost: </p>
+<%= number_to_currency(@order.total_cost, precision:3 ) %>
+
+<%= render 'orders/place_order'%>
+
+<%else%>
+<div class="alert alert-warning" role="alert">
+  No Items added to cart yet!
+</div>
+<%end%>

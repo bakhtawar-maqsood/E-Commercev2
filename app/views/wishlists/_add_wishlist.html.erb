@@ -1,0 +1,22 @@
+<%= form_with( scope: :wishlist, url: user_wishlist_url(@user) , local: true) do |form| %>
+
+
+  <div class="field">
+    <%= form.hidden_field :user_id, value: current_user.id%>
+  </div>
+
+  <div class="field">
+    <%= form.hidden_field :product_id, value: @product.id%>
+  </div>
+
+  <%if !in_wishlist?(@product.id)%>
+    <div class="actions">
+      <%= button_tag(type: 'submit', class: "btn btn-success") do %>
+        Add to Wishlist
+      <% end %>
+    </div>
+  <%else%>
+      <strong class="btn btn-outline-success disabled m-3">Added to Wishlist</strong>
+  <%end%>
+
+<%end%>

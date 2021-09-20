@@ -1,0 +1,15 @@
+I"8(function() {
+  var random, search;
+
+  random = function(number) {
+    return Math.floor(Math.random() * number);
+  };
+
+  search = function() {
+    var rndCol;
+    rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    document.body.style.backgroundColor = rndCol;
+  };
+
+}).call(this);
+:ET

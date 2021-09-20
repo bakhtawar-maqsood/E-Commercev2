@@ -1,0 +1,16 @@
+You payed:  <%= @order.total_cost %>
+
+******** PRODUCT DETAILS *********
+<%@order_items = @order.order_items%>
+<%@order_items.each do |order_item|%>
+  <% item = Product.find(order_item.product_id)%>
+    Product Name:  <%= item.name %>
+    Serial Number  <%= item.serial_no %>
+    Price per product  <%= number_to_currency(item.price, precision:3 ) %>
+    Quantity  <%=order_item.quantity %>
+    Total for this Product  <%= order_item.quantity * item.price%>
+
+      -------------------
+
+<% end %>
+**********************************
