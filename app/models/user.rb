@@ -26,7 +26,7 @@ class User < ApplicationRecord
   end
 
   def placed
-    orders.where(status: 1)
+    orders.where(status: 1).order(:created_at)
   end
 end
 

@@ -1,17 +1,8 @@
 class OrdersController < ApplicationController
   before_action :order_params, only: :create
 
-  def new
-
-  end
-
-  def edit
-  end
-
   def update
-
-    byebug
-    @amount = params[:order][:total_cost]
+    @amount = params[:total_order_cost]
     @user = User.find(params[:user_id])
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],

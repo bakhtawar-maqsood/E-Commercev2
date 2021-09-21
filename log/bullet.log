@@ -26541,3 +26541,1540 @@ Call stack
   /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___56651077156542733_34620'
   /home/dev/Documents/Test-Project-ECommerce/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___56651077156542733_34620'
 
+2021-09-21 12:42:34[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_30680'
+
+2021-09-21 12:42:34[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_30680'
+
+2021-09-21 12:43:52[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4016590064351869467_32140'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4016590064351869467_32140'
+
+2021-09-21 12:43:56[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_32440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_32440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_32420'
+
+2021-09-21 12:43:56[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_32440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_32440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_32420'
+
+2021-09-21 12:43:59[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4016590064351869467_32660'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4016590064351869467_32660'
+
+2021-09-21 12:44:01[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_32860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_32860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_32840'
+
+2021-09-21 12:44:01[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_32860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_32860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_32840'
+
+2021-09-21 12:45:01[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_33800'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_33800'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_33780'
+
+2021-09-21 12:45:01[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_33800'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_33800'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_33780'
+
+2021-09-21 12:45:06[WARN] user: dev
+GET /products/8
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4016590064351869467_34020'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4016590064351869467_34020'
+
+2021-09-21 12:45:09[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34200'
+
+2021-09-21 12:45:09[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34200'
+
+2021-09-21 12:45:15[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34580'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34580'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34560'
+
+2021-09-21 12:45:15[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34580'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34580'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34560'
+
+2021-09-21 12:45:21[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4016590064351869467_34680'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4016590064351869467_34680'
+
+2021-09-21 12:45:25[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34840'
+
+2021-09-21 12:45:25[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__4285936780618373417_34860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4285936780618373417_34860'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___1658151730087781281_34840'
+
+2021-09-21 13:10:09[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_30680'
+
+2021-09-21 13:10:09[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_30700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_30680'
+
+2021-09-21 13:10:16[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_32340'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_32340'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_32320'
+
+2021-09-21 13:10:16[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_32340'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_32340'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_32320'
+
+2021-09-21 13:10:42[WARN] user: dev
+GET /?search_term=shirt
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_32680'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_32680'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_32660'
+
+2021-09-21 13:10:50[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_32980'
+
+2021-09-21 13:10:50[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_32980'
+
+2021-09-21 13:11:04[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33240'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33240'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33220'
+
+2021-09-21 13:11:04[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33240'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33240'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33220'
+
+2021-09-21 13:13:55[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33480'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33480'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33460'
+
+2021-09-21 13:13:55[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33480'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33480'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33460'
+
+2021-09-21 13:14:03[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33920'
+
+2021-09-21 13:14:03[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___2179009176544117979_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___2179009176544117979_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1877600077054820133_33920'
+
+2021-09-21 13:59:31[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4497732484156627342_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4497732484156627342_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1003193089712937172_33920'
+
+2021-09-21 13:59:31[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4497732484156627342_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4497732484156627342_33940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__1003193089712937172_33920'
+
+2021-09-21 14:10:55[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___3749385304468939409_72560'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___3749385304468939409_72560'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4317970738730019400_72540'
+
+2021-09-21 14:10:55[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___3749385304468939409_72560'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___3749385304468939409_72560'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4317970738730019400_72540'
+
+2021-09-21 14:11:15[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___3100078302097437553_85600'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___3100078302097437553_85600'
+
+2021-09-21 14:11:27[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___3100078302097437553_86460'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___3100078302097437553_86460'
+
+2021-09-21 14:11:43[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___3749385304468939409_86960'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___3749385304468939409_86960'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4317970738730019400_86940'
+
+2021-09-21 14:11:43[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___3749385304468939409_86960'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___3749385304468939409_86960'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4317970738730019400_86940'
+
+2021-09-21 14:11:48[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___3100078302097437553_87160'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___3100078302097437553_87160'
+
+2021-09-21 14:11:52[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___3100078302097437553_87440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___3100078302097437553_87440'
+
+2021-09-21 14:16:09[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_44820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_44820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_44800'
+
+2021-09-21 14:16:09[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_44820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_44820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_44800'
+
+2021-09-21 14:17:14[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_58640'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_58640'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_58620'
+
+2021-09-21 14:17:14[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_58640'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_58640'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_58620'
+
+2021-09-21 14:17:17[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_59020'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_59020'
+
+2021-09-21 14:17:20[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_59540'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_59540'
+
+2021-09-21 14:17:24[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_59820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_59820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_59800'
+
+2021-09-21 14:17:24[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_59820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_59820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_59800'
+
+2021-09-21 14:17:26[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_60020'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_60020'
+
+2021-09-21 14:17:28[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_60300'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_60300'
+
+2021-09-21 14:19:32[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_62060'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_62060'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_62040'
+
+2021-09-21 14:19:32[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_62060'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_62060'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_62040'
+
+2021-09-21 14:19:38[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_62280'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_62280'
+
+2021-09-21 14:19:43[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_62540'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_62540'
+
+2021-09-21 14:19:47[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_62820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_62820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_62800'
+
+2021-09-21 14:19:47[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_62820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_62820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_62800'
+
+2021-09-21 14:19:48[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_63020'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_63020'
+
+2021-09-21 14:19:51[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_63260'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_63260'
+
+2021-09-21 14:24:24[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_77000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_77000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_76980'
+
+2021-09-21 14:24:24[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_77000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_77000'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_76980'
+
+2021-09-21 14:24:25[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_77520'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_77520'
+
+2021-09-21 14:24:29[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_77820'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_77820'
+
+2021-09-21 14:24:36[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_78040'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_78040'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_78020'
+
+2021-09-21 14:24:36[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_78040'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_78040'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_78020'
+
+2021-09-21 14:24:38[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_78240'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_78240'
+
+2021-09-21 14:24:55[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_78560'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_78560'
+
+2021-09-21 14:25:44[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_79220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_79220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_79200'
+
+2021-09-21 14:25:44[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_79220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_79220'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_79200'
+
+2021-09-21 14:25:46[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_79440'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_79440'
+
+2021-09-21 14:25:52[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_79700'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_79700'
+
+2021-09-21 14:25:57[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_80100'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_80100'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_80080'
+
+2021-09-21 14:25:57[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_80100'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_80100'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_80080'
+
+2021-09-21 14:26:01[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_80300'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_80300'
+
+2021-09-21 14:26:05[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_80500'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_80500'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_80480'
+
+2021-09-21 14:26:05[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb__3210977700685642442_80500'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__3210977700685642442_80500'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___4203419194525878015_80480'
+
+2021-09-21 14:26:07[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_80600'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_80600'
+
+2021-09-21 14:26:12[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb___4552015396964733225_80880'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb___4552015396964733225_80880'
+
+2021-09-21 14:34:48[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_31620'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_31620'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_31600'
+
+2021-09-21 14:34:48[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_31620'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_31620'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_31600'
+
+2021-09-21 14:35:06[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_33160'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_33160'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_33140'
+
+2021-09-21 14:35:06[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_33160'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_33160'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_33140'
+
+2021-09-21 14:35:08[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_33400'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_33400'
+
+2021-09-21 14:35:13[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_33920'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_33920'
+
+2021-09-21 14:35:17[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_34200'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_34200'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_34180'
+
+2021-09-21 14:35:17[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_34200'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_34200'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_34180'
+
+2021-09-21 14:35:22[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_34400'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_34400'
+
+2021-09-21 14:35:26[WARN] user: dev
+GET /products/3
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_34680'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_34680'
+
+2021-09-21 14:35:28[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_34940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_34940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_34920'
+
+2021-09-21 14:35:28[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_34940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_34940'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_34920'
+
+2021-09-21 14:35:29[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_35140'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_35140'
+
+2021-09-21 14:35:31[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_35360'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_35360'
+
+2021-09-21 15:38:52[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_42520'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_42520'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_42500'
+
+2021-09-21 15:38:52[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_42520'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_42520'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_42500'
+
+2021-09-21 15:42:16[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_43920'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_43920'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_43900'
+
+2021-09-21 15:42:16[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___424622892993089887_43920'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___424622892993089887_43920'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2117249581298500465_43900'
+
+2021-09-21 15:42:20[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_44140'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_44140'
+
+2021-09-21 15:42:24[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__2391667114053395836_44360'
+  /home/dev/Documents/Untitled Folder/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__2391667114053395836_44360'
+
+2021-09-21 15:44:29[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_31680'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_31680'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_31660'
+
+2021-09-21 15:44:29[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_31680'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_31680'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_31660'
+
+2021-09-21 15:45:17[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_32900'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_32900'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_32880'
+
+2021-09-21 15:45:17[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_32900'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_32900'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_32880'
+
+2021-09-21 15:46:04[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_33280'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_33280'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_33260'
+
+2021-09-21 15:46:04[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_33280'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_33280'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_33260'
+
+2021-09-21 15:46:09[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_33600'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_33600'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_33580'
+
+2021-09-21 15:46:09[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_33600'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_33600'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_33580'
+
+2021-09-21 15:46:49[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_34360'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_34360'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_34340'
+
+2021-09-21 15:46:49[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_34360'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_34360'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_34340'
+
+2021-09-21 15:47:41[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_34480'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_34480'
+
+2021-09-21 15:47:44[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_34780'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_34780'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_34760'
+
+2021-09-21 15:47:44[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_34780'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_34780'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_34760'
+
+2021-09-21 15:48:10[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_35000'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_35000'
+
+2021-09-21 15:48:14[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_35200'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_35200'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_35180'
+
+2021-09-21 15:48:14[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_35200'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_35200'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_35180'
+
+2021-09-21 15:48:15[WARN] user: dev
+GET /products/6
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_35420'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_35420'
+
+2021-09-21 15:48:18[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_35720'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_35720'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_35700'
+
+2021-09-21 15:48:18[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_35720'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_35720'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_35700'
+
+2021-09-21 15:49:22[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_36880'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_36880'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_36860'
+
+2021-09-21 15:49:22[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_36880'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_36880'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_36860'
+
+2021-09-21 15:49:24[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_37020'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_37020'
+
+2021-09-21 15:49:30[WARN] user: dev
+PATCH /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:42:in `block in image_type'
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:41:in `image_type'
+  /home/dev/Documents/E-Commercev2/app/controllers/products_controller.rb:40:in `update'
+
+2021-09-21 15:49:30[WARN] user: dev
+GET /products/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_37400'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_37400'
+
+2021-09-21 15:51:26[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_39260'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_39260'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_39240'
+
+2021-09-21 15:51:26[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_39260'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_39260'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_39240'
+
+2021-09-21 15:52:46[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_39900'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_39900'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_39880'
+
+2021-09-21 15:52:46[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_39900'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_39900'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_39880'
+
+2021-09-21 15:52:48[WARN] user: dev
+GET /products/2
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_40040'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_40040'
+
+2021-09-21 15:52:59[WARN] user: dev
+GET /products/2
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_40280'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_40280'
+
+2021-09-21 15:53:36[WARN] user: dev
+GET /products/2
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_40460'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_40460'
+
+2021-09-21 15:53:40[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_40680'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_40680'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_40660'
+
+2021-09-21 15:53:40[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_40680'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_40680'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_40660'
+
+2021-09-21 15:53:45[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_40920'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_40920'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_40900'
+
+2021-09-21 15:53:45[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_40920'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_40920'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_40900'
+
+2021-09-21 15:53:46[WARN] user: dev
+GET /products/2
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_41020'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_41020'
+
+2021-09-21 15:54:12[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_41200'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_41200'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_41180'
+
+2021-09-21 15:54:12[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_41200'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_41200'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__4149171894195672394_41180'
+
+2021-09-21 15:54:29[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_41320'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_41320'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_41300'
+
+2021-09-21 15:54:29[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_41320'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_41320'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_41300'
+
+2021-09-21 15:55:12[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_43000'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_43000'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_42980'
+
+2021-09-21 15:55:12[WARN] user: dev
+GET /users/1/products
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:9:in `block in _app_views_partials__display_products_html_erb___4473025717120289658_43000'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___4473025717120289658_43000'
+  /home/dev/Documents/E-Commercev2/app/views/products/index.html.erb:8:in `_app_views_products_index_html_erb___1953160336890993283_42980'
+
+2021-09-21 15:55:14[WARN] user: dev
+GET /products/2
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_43160'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_43160'
+
+2021-09-21 15:55:19[WARN] user: dev
+GET /products/8
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_43340'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_43340'
+
+2021-09-21 15:55:26[WARN] user: dev
+GET /products/8
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_43580'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_43580'
+
+2021-09-21 15:56:07[WARN] user: dev
+GET /products/5
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:36:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:41:in `block in _app_views_products_show_html_erb__1803175938086438972_43840'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `_app_views_products_show_html_erb__1803175938086438972_43840'
+

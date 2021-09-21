@@ -1,7 +1,7 @@
 <% if user_signed_in?%>
   <%= form_with( scope: :order, url: user_order_url(current_user.id),method: :patch , local: true) do |form|%>
 
-    <%=form.hidden_field :total_cost , value: @order.total_cost %>
+    <input id="total_order_cost" class="d-none" name= "total_order_cost" value="">
 
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="<%= 'pk_test_51JZWMuEVSKB0mGfOY5sTEpVGMlvmxq6LuOkWzaGZEzrDTkCatKblEo4ZogeVlR5S5iHku4USfSgMn3jw7Tmi4Kl700dUvrravD' %>"

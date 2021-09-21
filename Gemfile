@@ -17,17 +17,19 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bullet', '~> 6.1', '>= 6.1.5'
 gem 'mini_magick', '~> 4.8'
-#gem 'paypal-sdk-rest', '~> 1.7', '>= 1.7.4'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.8.0'
 gem "bootstrap_form", "~> 4.0"
-gem 'toastr-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap_icons_rails'
 gem 'telephone_number'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'mysql2',          '~> 0.5.0',    :platform => :ruby
 gem 'thinking-sphinx', '~> 5.0'
 gem 'pg_search'
 gem 'jquery-rails'
+
+
 
 
 group :development, :test do
