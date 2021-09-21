@@ -17,34 +17,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <div class="field">
+    <%= form.label :name,class:"col-sm-1 col-form-label" %>
+    <%= form.text_field :name, class:"form-control"%>
   </div>
 
   <div class="field">
-    <%= form.label :serial_no %>
-    <%= form.text_field :serial_no %>
+    <%= form.label :price, class:"col-sm-1 col-form-label"%>
+    <%= form.number_field :price, class:"form-control"%>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price %>
+    <%= form.label :description, class:"col-sm-1 col-form-label" %>
+    <%= form.text_field :description, placeholder: "if any", class:"form-control"%>
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id, value: current_user.id%>
+    <%= form.hidden_field :user_id, value: current_user.id%>
   </div>
 
 
   <div class="field">
-    <%= form.label :images %>
-    <%= form.file_field :images, multiple: true, direct_upload: true %>
+    <%= form.file_field :images, multiple: true, direct_upload: true, class:"form-control mt-4" %>
   </div>
+  <br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :class => "btn btn-primary btn-block" %>
   </div>
 
 <% end %>
