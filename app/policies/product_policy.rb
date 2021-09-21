@@ -16,4 +16,9 @@ class ProductPolicy < ApplicationPolicy
   def add?
     user.id != record.user_id
   end
+
+  def index
+    byebug
+    record&.first&.user_id == user.id || nil
+  end
 end

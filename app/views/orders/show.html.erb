@@ -18,11 +18,11 @@
         <td><%= item.serial_no %></td>
         <%= content_tag(:td, item.price, class:"product_price")%>
         <td><%= link_to 'Show', item , class:"btn btn-primary"%></td>
-        <td><%= link_to 'Delete', user_order_path(product_id: item.id) , method: :delete, class:"btn btn-danger" %></td>
+        <td><%= link_to 'Delete', user_order_path(product_id: item.id) , method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
         <td>
           <div class="input-group">
             <%= form_with( scope: :order_items, url: order_item_path(order_item.order), method: :patch) do |form|%>
-                <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                <button type="button" class="quantity-left-minus btn btn-primary btn-number"  data-type="minus" data-field="">
                   <span><%= bi_icon('dash')%></span>
                 </button>
                 <%= form.hidden_field :index, value: index%>
@@ -36,7 +36,7 @@
                 <%= form.hidden_field :index, value: index%>
                 <%= form.hidden_field :product_id, value: item.id%>
                 <%= form.hidden_field :action, value: "+"%>
-                <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                <button type="button" class="quantity-right-plus btn btn-primary btn-number" data-type="plus" data-field="">
                     <span><%= bi_icon('plus')%></span>
                 </button>
                 <button type="submit" class="plus-submit d-none">+</button>
