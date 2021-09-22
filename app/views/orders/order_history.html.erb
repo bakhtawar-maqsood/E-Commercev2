@@ -1,31 +1,31 @@
-
-
 <h1>Shopping History</h1>
-<% unless  @order == nil%>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Order id</th>
-      <th>Payed</th>
-      <th>Dated</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @order.each do |order| %>
+<% unless  @order == nil%>
+
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= order.id %></td>
-        <td><%= number_to_currency(order.total_cost, precision:3 ) %></td>
-        <td><%= order.date %></td>
+        <th>Order id</th>
+        <th>Payed</th>
+        <th>Dated</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @order.each do |order| %>
+        <tr>
+          <td><%= order.id %></td>
+          <td><%= number_to_currency(order.total_cost, precision:3 ) %></td>
+          <td><%= order.updated_at %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
 <%else%>
 
-<p>You don't have any shopping yet! </p>
-<%= link_to 'Start Shopping', product, :class => "btn btn-info" %>
+  <p>You don't have any shopping yet! </p>
+  <%= link_to 'Start Shopping', product, :class => "btn btn-info" %>
 
 <%end%>

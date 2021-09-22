@@ -1,60 +1,64 @@
 <h1 class="display-4 text-c">My Cart</h1>
+
 <% if  @order_items.present?%>
-<table class = "table">
-  <thead>
-    <tr>
-      <th>Product name</th>
-      <th>Product serial no</th>
-      <th>Product price</th>
-      <th colspan="2"></th>
-       <th>Quantity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @order_items.order(:product_id).each do |order_item, index| %>
-    <% item = Product.find(order_item.product_id)%>
-      <tr class="record">
-        <td><%= item.name %></td>
-        <td><%= item.serial_no %></td>
-        <%= content_tag(:td, item.price, class:"product_price")%>
-        <td><%= link_to 'Show', item , class:"btn btn-primary"%></td>
-        <td><%= link_to 'Delete', user_order_path(product_id: item.id) , method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
-        <td>
-          <div class="input-group">
-            <%= form_with( scope: :order_items, url: order_item_path(order_item.order), method: :patch) do |form|%>
-                <button type="button" class="quantity-left-minus btn btn-primary btn-number"  data-type="minus" data-field="">
-                  <span><%= bi_icon('dash')%></span>
-                </button>
+  <table class = "table">
+    <thead>
+      <tr>
+        <th>Product name</th>
+        <th>Product serial no</th>
+        <th>Product price</th>
+        <th colspan="2"></th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @order_items.order(:product_id).each do |order_item, index| %>
+      <% item = Product.find(order_item.product_id)%>
+        <tr class="record">
+          <td><%= item.name %></td>
+          <td><%= item.serial_no %></td>
+          <td><%= content_tag(:td, item.price, class:"product_price")%></td>
+          <td><%= link_to 'Show', item , class:"btn btn-primary"%></td>
+          <td><%= link_to 'Delete', user_order_path(product_id: item.id) , method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+          <td>
+            <div class="input-group">
+              <%= form_with( scope: :order_items, url: order_item_path(order_item.order), method: :patch) do |form|%>
                 <%= form.hidden_field :index, value: index%>
                 <%= form.hidden_field :product_id, value: item.id%>
                 <%= form.hidden_field :action, value: "-"%>
-                <button type="submit" class="minus-submit d-none">-</button>
+                <button type="button" class="quantity-left-minus btn btn-primary btn-number"  data-type="minus" data-field="">
+                  <span><%= bi_icon('dash')%></span>
                 </button>
-            <% end %>
-           <input readonly class="quantity text-center w-25" value=<%=order_item.quantity%>>
-            <%= form_with( scope: :order_items, url: order_item_path(order_item.order), method: :patch) do |form|%>
+                <button type="submit" class="minus-submit d-none">-</button>
+              <%end%>
+              <input readonly class="quantity text-center w-25" value=<%=order_item.quantity%>>
+              <%= form_with( scope: :order_items, url: order_item_path(order_item.order), method: :patch) do |form|%>
                 <%= form.hidden_field :index, value: index%>
                 <%= form.hidden_field :product_id, value: item.id%>
                 <%= form.hidden_field :action, value: "+"%>
                 <button type="button" class="quantity-right-plus btn btn-primary btn-number" data-type="plus" data-field="">
-                    <span><%= bi_icon('plus')%></span>
+                  <span><%= bi_icon('plus')%></span>
                 </button>
                 <button type="submit" class="plus-submit d-none">+</button>
-            <% end %>
-          </div>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<p class="p d-inline">Total Cost: </p>
-<p class="current_total_cost"><%= @order.total_cost %></p>
-<%= render 'orders/place_order' %>
+              <% end %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <p class="p d-inline">Total Cost: </p>
+  <p class="current_total_cost"><%= @order.total_cost %></p>
+  <%= render 'orders/place_order' %>
+
 <%else%>
-<div class="alert alert-warning" role="alert">
-  No Items added to cart yet!
-</div>
+
+  <div class="alert alert-warning" role="alert">
+    No Items added to cart yet!
+  </div>
+
 <%end%>
+
 <script>
   $(document).ready(function(){
     var quantity=0;

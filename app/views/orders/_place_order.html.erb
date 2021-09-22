@@ -1,19 +1,21 @@
 <% if user_signed_in?%>
-  <%= form_with( scope: :order, url: user_order_url(current_user.id),method: :patch , local: true) do |form|%>
 
+  <%= form_with( scope: :order, url: user_order_url(current_user.id),method: :patch , local: true) do |form|%>
     <input id="total_order_cost" class="d-none" name= "total_order_cost" value="">
 
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= 'pk_test_51JZWMuEVSKB0mGfOY5sTEpVGMlvmxq6LuOkWzaGZEzrDTkCatKblEo4ZogeVlR5S5iHku4USfSgMn3jw7Tmi4Kl700dUvrravD' %>"
-            data-description="An order payment"
-            data-amount= @order.total_cost
-            data-locale="auto">
+      data-key="<%= 'pk_test_51JZWMuEVSKB0mGfOY5sTEpVGMlvmxq6LuOkWzaGZEzrDTkCatKblEo4ZogeVlR5S5iHku4USfSgMn3jw7Tmi4Kl700dUvrravD' %>"
+      data-description="An order payment"
+      data-amount= @order.total_cost
+      data-locale="auto">
     </script>
-
   <%end%>
+
 <%else%>
+
    <%= link_to guest_carts_path, class: "btn btn-primary",method: :patch do %>
     Place Order
    <%end%>
+
 <%end%>
 

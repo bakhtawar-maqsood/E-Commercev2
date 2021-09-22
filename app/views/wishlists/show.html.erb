@@ -2,32 +2,27 @@
 
 <h1 class="display-4 text-center">My Wishlist</h1>
 <% unless  @product == nil%>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Product name</th>
-      <th>Product serial no</th>
-      <th>Product price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @product.each do |product| %>
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= product.name %></td>
-        <td><%= product.serial_no %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show Details', product,  class:"link-info" %></td>
-        <td><%= link_to 'Remove from wishlist', user_wishlist_path(:product_id => product.id) , method: :delete ,  class:"link-danger"   %></td>
-
+        <th>Product name</th>
+        <th>Product serial no</th>
+        <th>Product price</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
+    </thead>
+    <tbody>
+      <% @product.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.serial_no %></td>
+          <td><%= product.price %></td>
+          <td><%= link_to 'Show Details', product,  class:"link-info" %></td>
+          <td><%= link_to 'Remove from wishlist', user_wishlist_path(:product_id => product.id) , method: :delete ,  class:"link-danger"   %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 <%else%>
-
-<p>No Items added to wishlist</p>
-
+  <p>No Items added to wishlist</p>
 <%end%>
