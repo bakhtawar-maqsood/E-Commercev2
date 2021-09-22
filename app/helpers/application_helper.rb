@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
+  def commenter_name(user_id)
+    User.find(user_id).name
+  end
   def in_wishlist?(product_id)
     current_user&.wishlist&.products&.where(id: product_id)&.empty?
   end

@@ -46,7 +46,6 @@ class Order < ApplicationRecord
     if :status.nil?
       self.status = 0
     end
-    self.date = Date.today
   end
 
 

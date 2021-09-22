@@ -1,18 +1,19 @@
 <%= form_with(scope: :guest_carts, url: '/guest_carts', method: :post, local: true) do |form|%>
 
   <div class="field">
-  <%= form.number_field :quantity, value: 1 %>
+    <%= form.number_field :quantity, value: 1 %>
   </div>
 
   <div class="field">
-  <%= form.hidden_field :product_id, value: @product.id %>
+    <%= form.hidden_field :product_id, value: @product.id %>
   </div>
 
   <br>
+
   <div class="actions">
     <%= form.button(type: 'submit', class: "btn btn-primary") do %>
       Add to Cart
     <% end %>
   </div>
 
-  <%end%>
+<%end%>

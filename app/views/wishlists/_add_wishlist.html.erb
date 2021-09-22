@@ -6,6 +6,7 @@
   <div class="field">
     <%= form.hidden_field :product_id, value: @product.id%>
   </div>
+
   <%if in_wishlist?(@product.id)%>
     <div class="actions">
       <%= button_tag(type: 'submit', class: "btn btn-success") do %>
@@ -13,6 +14,6 @@
       <% end %>
     </div>
   <%else%>
-      <strong class="btn btn-outline-success disabled m-3">Added to Wishlist</strong>
+    <strong class="btn btn-outline-success disabled m-3">Added to Wishlist</strong>
   <%end%>
 <%end%>

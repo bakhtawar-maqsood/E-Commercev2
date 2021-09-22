@@ -2,18 +2,9 @@
 
 <%= form_with(model: @comment) do |form| %>
 
-  <p>
-    <%= form.hidden_field :commenter , value: current_user.name %>
-  </p>
-  <p>
-    <%= form.text_area :body %>
-  </p>
+  <p><%= form.hidden_field :commenter , value: current_user.name %></p>
+  <p><%= form.text_area :body %></p>
+  <p><%= form.hidden_field :user_id, value: current_user.id %></p>
+  <p><%= form.submit%></p>
 
-  <p>
-    <%= form.hidden_field :user_id, value: current_user.id %>
-  </p>
-
-  <p>
-    <%= form.submit%>
-  </p>
 <% end %>
