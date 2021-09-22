@@ -39,9 +39,9 @@ class ProductsController < ApplicationController
       ser_no = @product.generate_serial_number
       if @product.update(serial_no: ser_no)
         redirect_to product_path(@product)
-      else
-        render 'new'
       end
+    else
+      render 'new'
     end
 
   end
@@ -55,7 +55,7 @@ class ProductsController < ApplicationController
 
   private
   def product_params
-    params.require(:product).permit(:name, :serial_no, :price, :user_id, images: [])
+    params.require(:product).permit(:name, :description, :price, :user_id, images: [])
   end
 
   def find_user
