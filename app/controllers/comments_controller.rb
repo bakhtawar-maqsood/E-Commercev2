@@ -6,11 +6,9 @@ class CommentsController < ApplicationController
     @comment = @product.comments.new(comment_params)
     authorize @comment
     if @comment.save
-      redirect_to product_path(@product) if @comment.save
-      # format.js
+      redirect_to product_path(@product)
     else
-      # render 'form'
-      # format.js
+
     end
   end
 
@@ -38,11 +36,10 @@ class CommentsController < ApplicationController
     end
   end
 
-
-
   private
 
   def comment_params
     params.require(:comment).permit(:commenter, :body, :user_id, images: [])
   end
+
 end

@@ -20,12 +20,12 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(resource)
     unless session[:order].nil?
-      if current_user&.cart.nil?
+      if current_user&.order_in_cart.nil?
         @order = current_user.orders.create(total_cost: session[:total_cost], status: 0)
       else
-        t_cost = current_user.cart.total_cost
-        current_user.cart.update(total_cost: t_cost + session[:total_cost])
-        @order = current_user.cart
+        t_cost = current_user.order_in_cart.total_cost
+        current_user.order_in_cart.update(total_cost: t_cost + session[:total_cost])
+        @order = current_user.order_in_cart
       end
       @order.transfer_guest_cart_to_orders(session[:order])
       flash[:notice] = "Logged In! Now you can checkout"

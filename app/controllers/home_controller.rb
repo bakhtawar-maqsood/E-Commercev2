@@ -9,6 +9,4 @@ class HomeController < ApplicationController
     end
   end
 
-  def create_cart
-  end
 end

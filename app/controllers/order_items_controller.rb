@@ -1,5 +1,6 @@
 class OrderItemsController < ApplicationController
   before_action :set_data, only: :update
+
   def update
     if @action == "+"
       @new_quantity = @quantity + 1
@@ -21,4 +22,5 @@ class OrderItemsController < ApplicationController
     @order_item = @order.order_items.find_by(product_id: @product_id)
     @quantity = @order_item.quantity
   end
+
 end

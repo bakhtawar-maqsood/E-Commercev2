@@ -9,6 +9,6 @@ module ApplicationHelper
   end
 
   def in_cart? p_id
-    !current_user&.cart&.order_items&.find_by(product_id: p_id).nil?
+    !current_user&.order_in_cart&.order_items&.find_by(product_id: p_id).nil?
   end
 end

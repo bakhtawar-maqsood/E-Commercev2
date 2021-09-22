@@ -15,12 +15,6 @@ class WishlistsController < ApplicationController
     redirect_to user_wishlist_path(@user)
   end
 
-  def edit
-  end
-
-  def update
-  end
-
   def create
     @user = User.find(params[:user_id])
     @wishlist = set_wishlist
