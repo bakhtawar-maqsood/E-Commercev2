@@ -1,8 +1,8 @@
-<form action=<%user_products_path(@user)%> >
-              <div class="input-group">
-                <%= text_field_tag :search_term, params[:search], id: 'search_term', class: 'form-control', placeholder:'Search...' %>
-                <button type="submit">Search</button>
-              </div>
+<form action=<%user_products_path(@user)%>
+        <div class="input-group">
+          <%= text_field_tag :search_term, params[:search], id: 'search_term', class: 'form-control', placeholder:'Search...' %>
+          <button type="submit">Search</button>
+        </div>
 </form>
 <h1 class="text-center display-2">My Products</h1>
 <%= render 'partials/display_products', product: @product %>

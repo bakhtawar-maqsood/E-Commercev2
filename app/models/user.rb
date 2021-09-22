@@ -2,22 +2,22 @@
 
 class User < ApplicationRecord
   has_one_attached :avatar
+  has_one :wishlist, dependent: :destroy
+
   has_many :products, dependent: :destroy
   has_many :comments, dependent: :destroy
-  has_one :wishlist, dependent: :destroy
   has_many :orders, dependent: :destroy
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  validates :name, :cnic, :address,:phone_no, presence: true
-  # validates :phone_no, telephone_number:{ country: "pakistan", types: [:mobile]}
+
+  validates :name, :cnic, :address, :phone_no, presence: true
 
   def avatar_thumbnail
     if avatar.attached?
-      avatar.variant(resize: "50x50!").processed
+      avatar.variant(resize: '50x50!').processed
     else
-      "/default_avatar.jpg"
+      '/default_avatar.jpg'
     end
   end
 
@@ -29,4 +29,3 @@ class User < ApplicationRecord
     orders.where(status: 1).order(:created_at)
   end
 end
-

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProductPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
@@ -18,7 +20,6 @@ class ProductPolicy < ApplicationPolicy
   end
 
   def index
-    byebug
-    record&.first&.user_id == user.id || nil
+    #record&.first&.user_id == user.id || nil
   end
 end

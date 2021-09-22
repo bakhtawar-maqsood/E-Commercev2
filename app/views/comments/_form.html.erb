@@ -1,23 +1,16 @@
 <%=form_with(model: [ @product, @product.comments.build ]) do |form| %>
+    <p> <%= form.hidden_field :commenter , value: current_user.name %></p>
 
-  <p>
-    <%= form.hidden_field :commenter , value: current_user.name %>
-  </p>
+    <div class="field">
+      <%= form.label :image %>
+      <%= form.file_field :images, multiple: true, direct_upload: true %>
+    </div>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :images, multiple: true, direct_upload: true %>
-  </div>
-  <div>
-    <p>
-      <%= form.text_area :body %>
-    </p>
-  </div>
-  <p>
-    <%= form.hidden_field :user_id, value: current_user.id %>
-  </p>
+    <div>
+      <p><%= form.text_area :body %></p>
+    </div>
 
-  <p>
-    <%= form.submit %>
-  </p>
+    <p><%= form.hidden_field :user_id, value: current_user.id %></p>
+
+    <p><%= form.submit %></p>
 <% end %>

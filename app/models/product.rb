@@ -6,7 +6,7 @@ class Product < ApplicationRecord
   belongs_to :user
 
   has_many :comments, dependent: :destroy
-  has_many :order_items
+  has_many :order_items, dependent: :destroy
   has_many :orders, through: :order_items
 
   has_and_belongs_to_many :wishlists
@@ -26,11 +26,9 @@ class Product < ApplicationRecord
                     }
                   }
 
-
   def generate_serial_number
-    "PK-%.6d" % id
+    'PK-%.6d' % id
   end
-
 
   def thumbnail(input)
     images[input].variant(resize: '200x200!').processed
@@ -45,7 +43,7 @@ class Product < ApplicationRecord
 
   def email_to_wisher
     if :price_changed?
-      wishlist_data = self.wishlists.select(:user_id).pluck
+      wishlist_data = wishlists.select(:user_id).pluck
       wishlist_data.each do |data|
         user_id = data[1]
         @user_email = User.select(:email).find(user_id)

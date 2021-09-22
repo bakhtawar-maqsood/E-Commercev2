@@ -1,42 +1,37 @@
 <h1 class="display-4 text-center">My Cart</h1>
 <% if  @order_items.present?%>
-<table class = "table">
-  <thead>
-    <tr>
-      <th>Product name</th>
-      <th>Product serial no</th>
-      <th>Product price</th>
-      <th>Quantity</th>
-    </tr>
-  </thead>
+    <table class = "table">
+      <thead>
+        <tr>
+          <th>Product name</th>
+          <th>Product serial no</th>
+          <th>Product price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @order_items.each do |order_item| %>
-    <% item = Product.find(order_item[0])%>
-      <tr>
-        <td><%= item.name %></td>
-        <td><%= item.serial_no %></td>
-        <td><%= number_to_currency(item.price, precision:3 ) %></td>
-        <td> <%= order_item[1] %></td>
-      </tr>
-    <% end %>
+      <tbody>
+        <% @order_items.each do |order_item| %>
+        <% item = Product.find(order_item[0])%>
+          <tr>
+            <td><%= item.name %></td>
+            <td><%= item.serial_no %></td>
+            <td><%= number_to_currency(item.price, precision:3 ) %></td>
+            <td> <%= order_item[1] %></td>
+          </tr>
+        <% end %>
 
-  </tbody>
+      </tbody>
 
-</table>
+    </table>
 
-<p class="p d-inline">Total Cost: </p>
-<%= number_to_currency(@total_cost, precision:3 ) %>
-
-<%= render 'orders/place_order'%>
-
-
-
-
+    <p class="p d-inline">Total Cost: </p>
+    <%= number_to_currency(@total_cost, precision:3 ) %>
+    <%= render 'orders/place_order'%>
 
 <%else%>
-<div class="alert alert-warning" role="alert">
-  No Items added to cart yet!
-</div>
+    <div class="alert alert-warning" role="alert">
+      No Items added to cart yet!
+    </div>
 <%end%>
 

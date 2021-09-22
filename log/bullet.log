@@ -30186,3 +30186,35 @@ Call stack
   /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb__4353067387252948045_121700'
   /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb__3351928262406295392_121680'
 
+2021-09-22 15:26:15[WARN] user: dev
+GET /
+USE eager loading detected
+  Product => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:34:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:8:in `block in _app_views_partials__display_products_html_erb___913867732849438186_33140'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___913867732849438186_33140'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2189976876883638669_33120'
+
+2021-09-22 15:26:15[WARN] user: dev
+GET /
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:34:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:8:in `block in _app_views_partials__display_products_html_erb___913867732849438186_33140'
+  /home/dev/Documents/E-Commercev2/app/views/partials/_display_products.html.erb:5:in `_app_views_partials__display_products_html_erb___913867732849438186_33140'
+  /home/dev/Documents/E-Commercev2/app/views/home/all_products.html.erb:9:in `_app_views_home_all_products_html_erb___2189976876883638669_33120'
+
+2021-09-22 15:26:17[WARN] user: dev
+GET /products/14
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/dev/Documents/E-Commercev2/app/models/product.rb:34:in `thumbnail'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:39:in `block in _app_views_products_show_html_erb___363822429294641887_33560'
+  /home/dev/Documents/E-Commercev2/app/views/products/show.html.erb:37:in `_app_views_products_show_html_erb___363822429294641887_33560'
+

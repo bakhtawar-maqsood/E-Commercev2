@@ -3,23 +3,22 @@
 class ProductsController < ApplicationController
   # before_action :set_product, only: %i[ show edit update destroy index ]
   before_action :authenticate_user!, except: [:show]
-  before_action :find_user, only: [:new, :index, :create]
-  before_action :find_product, only: [:show, :edit, :update, :destroy]
+  before_action :find_user, only: %i[new index create]
+  before_action :find_product, only: %i[show edit update destroy]
 
   def new
     @product = @user.products.build
   end
 
   def index
-    if params[:search_term].nil?
-      @products = @user.products
-    else
-      @products = @products.search_product(params[:search_term])
-    end
+    @products = if params[:search_term].nil?
+                  @user.products
+                else
+                  @products.search_product(params[:search_term])
+                end
   end
 
-  def show
-  end
+  def show; end
 
   def edit
     authorize @product
@@ -39,11 +38,10 @@ class ProductsController < ApplicationController
       ser_no = @product.generate_serial_number
       if @product.update(serial_no: ser_no)
         redirect_to product_path(@product)
-      else
-        render 'new'
       end
+    else
+      render 'new'
     end
-
   end
 
   def destroy
@@ -52,8 +50,8 @@ class ProductsController < ApplicationController
     redirect_to user_products_path(@user) if @product.destroy
   end
 
-
   private
+
   def product_params
     params.require(:product).permit(:name, :serial_no, :price, :user_id, images: [])
   end

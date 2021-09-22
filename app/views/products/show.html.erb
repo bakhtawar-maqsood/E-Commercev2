@@ -1,7 +1,5 @@
 
 <% @user = current_user%>
-
-
 <%= link_to user_signed_in? ? user_products_path(@user) : root_path do %>
   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="efefef" class="bi bi-arrow-left" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
@@ -36,19 +34,18 @@
                         </div>
                   </div>
                   <div style="width:40rem" class="m-2">
-                  <% (0...@product.images.count).each do |image_no| %>
-                      <div class="m-2 d-inline">
-                        <%= image_tag(@product.thumbnail(image_no))%>
-                      </div>
-                  <% end %>
-
+                      <% (0...@product.images.count).each do |image_no| %>
+                          <div class="m-2 d-inline">
+                            <%= image_tag(@product.thumbnail(image_no))%>
+                          </div>
+                      <% end %>
                   </div>
             </div>
             <div class="col-6 mt-5">
-              <%if user_signed_in? && current_user.id != @product.user_id%>
-                <%= render 'wishlists/add_wishlist'%>
-                <%= render 'orders/add_order'%>
-              <%end%>
+                <%if user_signed_in? && current_user.id != @product.user_id%>
+                  <%= render 'wishlists/add_wishlist'%>
+                  <%= render 'orders/add_order'%>
+                <%end%>
             </div>
         </div>
     </div>
@@ -57,10 +54,10 @@
         <%= render @product.comments %>
 
         <% if user_signed_in? %>
-            <%if current_user.id != @product.user_id%>
-              <h2 class="display-6 mt-3">Add Review:</h2>
-              <%= render 'comments/form' %>
-            <%end%>
+              <%if current_user.id != @product.user_id%>
+                <h2 class="display-6 mt-3">Add Review:</h2>
+                <%= render 'comments/form' %>
+              <%end%>
         <% else %>
 
     </div>

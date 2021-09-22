@@ -5,7 +5,7 @@ module ApplicationHelper
     current_user&.wishlist&.products&.where(id: product_id)&.empty?
   end
 
-  def in_cart? p_id
+  def in_cart?(p_id)
     !current_user&.cart&.order_items&.find_by(product_id: p_id).nil?
   end
 end

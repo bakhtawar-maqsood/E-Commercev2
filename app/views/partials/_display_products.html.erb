@@ -3,24 +3,26 @@
 
     <div class="row m-5">
         <% @products.each do |product| %>
-
             <div class="col-4 mt-5">
                 <div style="width:20rem" class="card">
                     <%= image_tag(product.thumbnail(0))%>
-                        <div class="card-body">
-                            <h4 class="card-title text-capitalize"><%= product.name %></h4>
-                            <p class="card-text"><%= number_to_currency(product.price, precision:3 ) %></p>
-                            <h6 class="card-subtitle font-light text-muted"><%= "Serial No: " + product.serial_no %></h6>
-                            <br>
-                            <%= link_to 'Show Details', product, :class => "btn btn-outline-primary" %>
-                        </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-capitalize"><%= product.name %></h4>
+                        <p class="card-text"><%= number_to_currency(product.price, precision:3 ) %></p>
+                        <h6 class="card-subtitle font-light text-muted"><%= "Serial No: " + product.serial_no %></h6>
+                        <br>
+                        <%= link_to 'Show Details', product, :class => "btn btn-outline-primary" %>
+                    </div>
                 </div>
             </div>
 
         <% end %>
     </div>
+
 <%else%>
+
    <p> No Products Found </p>
+
 <%end%>
 
 

@@ -6,7 +6,6 @@ class Comment < ApplicationRecord
 
   has_many_attached :images
 
-
   def thumbnail(input)
     images[input].variant(resize: '100x100!').processed
   end
