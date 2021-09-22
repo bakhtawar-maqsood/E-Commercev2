@@ -1,16 +1,15 @@
 class GuestCartsController < ApplicationController
   before_action :cart_index, only: :add
   before_action :authenticate_user!, only: :update
+
   def create
     order = Hash.new
-
     order = { cart_index => {quantity: params[:guest_carts][:quantity], product_id: params[:guest_carts][:product_id]}}
     if session[:order].nil?
       session[:order] = order
     else
       session[:order] = session[:order].merge(order)
     end
-
     redirect_to root_path, notice: "Added to Cart"
   end
 
@@ -28,10 +27,6 @@ class GuestCartsController < ApplicationController
       end
     end
     @order_items
-  end
-
-  def update
-
   end
 
   def cart_index

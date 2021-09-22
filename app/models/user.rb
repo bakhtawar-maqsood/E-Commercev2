@@ -21,11 +21,11 @@ class User < ApplicationRecord
     end
   end
 
-  def cart
+  def order_in_cart
     orders.find_by(status: 0)
   end
 
-  def placed
+  def placed_orders
     orders.where(status: 1).order(:created_at)
   end
 end

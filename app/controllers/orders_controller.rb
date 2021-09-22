@@ -1,34 +1,18 @@
 class OrdersController < ApplicationController
   before_action :order_params, only: :create
+  before_action :find_user, only: [:update, :destroy, :create, :order_history]
 
   def update
-    @amount = params[:total_order_cost]
-    @user = User.find(params[:user_id])
-    customer = Stripe::Customer.create(
-      email: params[:stripeEmail],
-      source: params[:stripeToken],
-    )
-
-    charge = Stripe::Charge.create({
-      customer: customer.id,
-      amount: @amount,
-      description: 'Rails Stripe customer',
-      currency: 'usd'
-    })
-
-    msg = @user.cart.confirm_order_and_change_status
+    create_customer
+    create_charge
+    msg = @user.order_in_cart.confirm_order_and_change_status
     redirect_to root_path, notice: msg
-
     EcommerceMailer.order_details(@user).deliver
-
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_to new_user_order_charge_path
   end
 
   def show
     @user = current_user
-    @order = @user.cart
+    @order = @user.order_in_cart
     if @order.present?
       @order_items = @order.order_items
     else
@@ -37,13 +21,12 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
     @product = Product.find(params[:order][:product_id])
     authorize @product, :add?
     if !@user.orders.present?
       @order = @user.orders.create(order_params)
-    elsif @user.cart
-      @order = @user.cart
+    elsif @user.order_in_cart
+      @order = @user.order_in_cart
     else
       @order = @user.orders.create(order_params)
     end
@@ -53,22 +36,43 @@ class OrdersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:user_id])
-    @order_item = @user.cart.order_items.find_by(product_id: params[:product_id])
+    @order_item = @user.order_in_cart.order_items.find_by(product_id: params[:product_id])
     @order_item.destroy
     redirect_to user_order_path(@user)
   end
 
   def order_history
-    @user = User.find(params[:user_id])
     authorize @user, :show_order_history?
-    @order = @user.placed
+    @order = @user.placed_orders
   end
 
-
   private
+
   def order_params
     params.require(:order).permit(:user_id)
+  end
+
+  def find_user
+    @user = User.find(params[:user_id])
+  end
+
+  def create_customer
+    @customer = Stripe::Customer.create(
+      email: params[:stripeEmail],
+      source: params[:stripeToken],
+    )
+  end
+
+  def create_charge
+    Stripe::Charge.create({
+      customer: customer.id,
+      amount: params[:total_order_cost],
+      description: 'Rails Stripe customer',
+      currency: 'usd'
+    })
+  rescue Stripe::CardError => e
+    flash[:error] = e.message
+    redirect_to new_user_order_charge_path
   end
 
 end
