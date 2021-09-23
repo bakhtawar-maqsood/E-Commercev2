@@ -1,0 +1,6 @@
+production:
+  cloud_name: "dpxupa9zn"
+  api_key: "439618615248476"
+  api_secret: "rABWqdhCjMjvipZJFTqbwEoI8AM"
+  secure: true
+  cdn_subdomain: true

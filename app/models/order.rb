@@ -4,11 +4,10 @@ class Order < ApplicationRecord
   belongs_to :user
   has_many :order_items, dependent: :destroy
   has_many :products, through: :order_items
+
   enum status: { in_cart: 0, placed: 1, delivered: 2 }
 
-
-
-  before_create :set_date_and_status
+  before_create :set_status
 
   def confirm_order_and_change_status
     @user = User.find(self.user_id)
@@ -42,13 +41,9 @@ class Order < ApplicationRecord
   end
 
   private
-  def set_date_and_status
+  def set_status
     if :status.nil?
-      self.status = 0
+      sstatus = 0
     end
   end
-
-
-
-
 end
