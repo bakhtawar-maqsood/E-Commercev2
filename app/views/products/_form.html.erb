@@ -33,9 +33,8 @@
     <%= form.hidden_field :user_id, value: current_user.id%>
   </div>
 
-
   <div class="field">
-    <%= form.file_field :images, multiple: true, class:"form-control mt-4",
+    <%= form.file_field :images, multiple: true, direct_upload: true, class:"form-control mt-4",
     data: { max_file_size: 2.megabytes }, required: true%>
   </div>
   <br>
