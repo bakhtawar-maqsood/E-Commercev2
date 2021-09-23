@@ -12,7 +12,7 @@ class WishlistsController < ApplicationController
 
   def destroy
     @product = @user.wishlist.products.destroy(params[:product_id])
-    redirect_to user_wishlist_path(@user)
+    redirect_to wishlist_path
   end
 
   def create
@@ -20,7 +20,7 @@ class WishlistsController < ApplicationController
     @product = Product.find(params[:wishlist][:product_id])
     authorize @product, :add?
     @add = @wishlist.products << @product
-    redirect_to user_wishlist_path(@user)
+    redirect_to wishlist_path
   end
 
   private
@@ -30,7 +30,7 @@ class WishlistsController < ApplicationController
   end
 
   def find_user
-    @user = User.find(params[:user_id])
+    @user = current_user
   end
   def wishlist_params
     params.require(:wishlist).permit(:user_id)

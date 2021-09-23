@@ -12,13 +12,13 @@
       </tr>
     </thead>
     <tbody>
-      <% @product.each do |product| %>
+      <% @product.with_attached_images.each do |product| %>
         <tr>
           <td><%= product.name %></td>
           <td><%= product.serial_no %></td>
           <td><%= product.price %></td>
           <td><%= link_to 'Show Details', product,  class:"link-info" %></td>
-          <td><%= link_to 'Remove from wishlist', user_wishlist_path(:product_id => product.id) , method: :delete ,  class:"link-danger"   %></td>
+          <td><%= link_to 'Remove from wishlist', wishlist_path(:product_id => product.id) , method: :delete ,  class:"link-danger", data: { confirm: 'Are you sure?' }  %></td>
         </tr>
       <% end %>
     </tbody>

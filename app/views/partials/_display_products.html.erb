@@ -2,7 +2,7 @@
 <% unless @products.nil? %>
 
     <div class="row m-5">
-        <% @products.each do |product| %>
+        <% @products.with_attached_images.each do |product| %>
             <div class="col-4 mt-5">
                 <div style="width:20rem" class="card">
                    <%= image_tag(product.thumbnail(0))%>
