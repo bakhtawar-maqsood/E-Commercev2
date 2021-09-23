@@ -6,16 +6,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-@user1 = User.create(name: "xyz", email: "xyz@gmail.com", cnic: "25202-2246788-9", phone_no: "0320-6666666", address: "abcdefghijklmnopqrstuvwxyz", password: "123456")
-@user2 = User.create(name: "xyz", email: "abc@gmail.com", cnic: "25202-2246788-9", phone_no: "0320-6666666", address: "abcdefghijklmnopqrstuvwxyz", password: "123456")
-@user3 = User.create(name: "xyz", email: "abcd@gmail.com", cnic: "25202-2246788-9", phone_no: "0320-6666666", address: "abcdefghijklmnopqrstuvwxyz", password: "123456")
-@user4 = User.create(name: "xyz", email: "abcde@gmail.com", cnic: "25202-2246788-9", phone_no: "0320-6666666", address: "abcdefghijklmnopqrstuvwxyz", password: "123456")
-
-
-Product.create(name: "abc", serial_no:"pk-0001001", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user1.id)
-Product.create(name: "abc", serial_no:"pk-0001002", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user1.id)
-Product.create(name: "abc", serial_no:"pk-0001003", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user2.id)
-Product.create(name: "abc", serial_no:"pk-0001004", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user4.id)
-Product.create(name: "abc", serial_no:"pk-0001005", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user3.id)
-Product.create(name: "abc", serial_no:"pk-0001006", price: 1000, description: "bghsadgjsahcfbklsdjvkgs", user_id: @user3.id)
+require 'ffaker'
+5.times do
+  t = User.create(name: FFaker::Name.name, email: FFaker::Internet.unique.email, cnic: "25202-2246788-9", phone_no: "0320-6666666", address: FFaker::Address.street_address, password: "123456")
+  3.times do |i|
+    puts t.id
+    product = Product.new(name: FFaker::Name.name,serial_no: "pkk-00#{i}", user_id: t.id)
+    product.images.attach(io: File.open('/'), filename: "logo.png",content_type: 'image/png')
+  end
+end

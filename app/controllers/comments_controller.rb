@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to product_path(@product)
     else
-
+      redirect_to product_path(@product), notice: "Did you try to upload file of any other type?"
     end
   end
 

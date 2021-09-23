@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   devise_for :users
 
   resource :guest_carts, only: [:create, :show, :update]
+  resource :wishlist, only: [:create, :show, :destroy]
 
   resources :users do
     resources :products, shallow: true do
       resources :comments, except: [:show, :new, :index]
     end
-    resource :wishlist, only: [:create, :show, :destroy]
     resource :order, except: [:index, :edit, :new] do
       get :order_history, on: :member, as: :history
       resources :order_items, only: [:update], shallow: true

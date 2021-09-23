@@ -1,5 +1,6 @@
 class OrderItemsController < ApplicationController
   before_action :set_data, only: :update
+  before_action :authenticate_user!, only: :update
 
   def update
     if @action == "+"

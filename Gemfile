@@ -26,15 +26,14 @@ gem 'bootstrap_icons_rails'
 gem 'telephone_number'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'mysql2',          '~> 0.5.0',    :platform => :ruby
-gem 'thinking-sphinx', '~> 5.0'
 gem 'pg_search'
 gem 'jquery-rails'
 
 
 
-
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'ffaker'
 end
 
 group :development do
