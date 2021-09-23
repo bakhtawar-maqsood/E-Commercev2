@@ -19,12 +19,12 @@
 
   <div class="field">
     <%= form.label :name,class:"col-sm-1 col-form-label" %>
-    <%= form.text_field :name, class:"form-control"%>
+    <%= form.text_field :name, class:"form-control", required:true%>
   </div>
 
   <div class="field">
     <%= form.label :price, class:"col-sm-1 col-form-label"%>
-    <%= form.number_field :price, class:"form-control"%>
+    <%= form.number_field :price, class:"form-control", required: true%>
   </div>
 
   <div class="field">

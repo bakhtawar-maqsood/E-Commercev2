@@ -3,14 +3,14 @@ class OrderItemsController < ApplicationController
 
   def update
     if @action == "+"
-      @new_quantity = @quantity + 1
-      @new_total_cost = @total_cost + @price
+      new_quantity = @quantity + 1
+      new_total_cost = @total_cost + @price
     else
-      @new_quantity = @quantity - 1
-      @new_total_cost = @total_cost - @price
+      new_quantity = @quantity - 1
+      new_total_cost = @total_cost - @price
     end
-    @order_item.update(quantity: @new_quantity)
-    @order.update(total_cost: @new_total_cost)
+    @order_item.update(quantity: new_quantity)
+    @order.update(total_cost: new_total_cost)
   end
 
   def set_data

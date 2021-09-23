@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :controllers
   devise_for :users
 
-  resource :guest_carts, only: [:create, :show]
+  resource :guest_carts, only: [:create, :show, :update]
 
   resources :users do
     resources :products, shallow: true do
