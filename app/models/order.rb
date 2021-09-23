@@ -29,13 +29,13 @@ class Order < ApplicationRecord
 
   def transfer_guest_cart_to_orders(session_items)
     session_items.each do |session_item|
-      p_id = session_item[1]["product_id"]
-      q = session_item[1]["quantity"]
-      product = Product.find(p_id)
+      product_id = session_item[1]["product_id"]
+      quantity = session_item[1]["quantity"]
+      product = Product.find(product_id)
       unless self.user_id == product.user_id
-        @order_item = self.order_items.create(product_id: p_id, quantity: q)
+        @order_item = self.order_items.create(product_id: product_id, quantity: quantity)
       else
-        self.update(total_cost: self.total_cost-(product.price * q.to_i))
+        self.update(total_cost: self.total_cost-(product.price * quantity.to_i))
       end
     end
   end
@@ -43,7 +43,7 @@ class Order < ApplicationRecord
   private
   def set_status
     if :status.nil?
-      sstatus = 0
+      self.status = 0
     end
   end
 end

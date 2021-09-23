@@ -6,12 +6,13 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_one :wishlist, dependent: :destroy
   has_many :orders, dependent: :destroy
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   validates :name, :cnic, :address,:phone_no, presence: true
-  # validates :phone_no, telephone_number:{ country: "pakistan", types: [:mobile]}
+  validates :phone_no, format: { with: /\d{4}-\d{7}/, message: "use xxxx-xxxxxxx format" }
+  validates :cnic, format: { with: /\d{5}-\d{7}-\d{1}/, message: "use xxxxx-xxxxxxxx-x format" }
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
   def avatar_thumbnail
     if avatar.attached?

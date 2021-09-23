@@ -3,11 +3,14 @@ class OrdersController < ApplicationController
   before_action :find_user, only: [:update, :destroy, :create, :order_history]
 
   def update
-    create_customer
-    create_charge
-    msg = @user.order_in_cart.confirm_order_and_change_status
-    redirect_to root_path, notice: msg
-    EcommerceMailer.order_details(@user).deliver
+    registration = register_with_stripe_service
+    if registration
+      msg = @user.order_in_cart.confirm_order_and_change_status
+      redirect_to root_path, notice: msg
+      EcommerceMailer.order_details(@user).deliver
+    else
+      redirect_to root_path, notice: "Cant process at this time"
+    end
   end
 
   def show
@@ -56,23 +59,13 @@ class OrdersController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
-  def create_customer
-    @customer = Stripe::Customer.create(
-      email: params[:stripeEmail],
-      source: params[:stripeToken],
-    )
-  end
 
-  def create_charge
-    Stripe::Charge.create({
-      customer: customer.id,
-      amount: params[:total_order_cost],
-      description: 'Rails Stripe customer',
-      currency: 'usd'
-    })
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_to new_user_order_charge_path
+  def register_with_stripe_service
+    StripeService.new({
+      email: params[:stripeEmail],
+      card: params[:stripeToken],
+      amount: params[:total_order_cost]
+    }).create_charge
   end
 
 end
