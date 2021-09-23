@@ -31,11 +31,11 @@ class GuestCartsController < ApplicationController
   end
 
   def update
-
   end
 
   def cart_index
     return 0 if session[:order].nil?
+
     session[:order].count
   end
 end

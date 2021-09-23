@@ -23,8 +23,8 @@ class ApplicationController < ActionController::Base
       if current_user&.order_in_cart.nil?
         @order = current_user.orders.create(total_cost: session[:total_cost], status: 0)
       else
-        t_cost = current_user.order_in_cart.total_cost
-        current_user.order_in_cart.update(total_cost: t_cost + session[:total_cost])
+        total_cost = current_user.order_in_cart.total_cost
+        current_user.order_in_cart.update(total_cost: total_cost + session[:total_cost])
         @order = current_user.order_in_cart
       end
       @order.transfer_guest_cart_to_orders(session[:order])

@@ -14,7 +14,9 @@ class Product < ApplicationRecord
   has_many_attached :images
 
   validates :name, :price, presence: true
+  validates :price, numericality: { greater_than: 3 }
   validate :image_type_validation
+
 
   after_update :email_to_wisher
 

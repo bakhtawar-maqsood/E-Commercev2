@@ -28,7 +28,6 @@ class WishlistsController < ApplicationController
   private
 
   def set_wishlist
-    # @user = User.find(params[:user_id])
     @wishlist = @user.wishlist || @user.create_wishlist(user_id: @user.id)
   end
 

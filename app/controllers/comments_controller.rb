@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class CommentsController < ApplicationController
+  before_action :find_comment, except: :create
+
   def create
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
@@ -13,30 +15,30 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = Comment.find(params[:id])
     authorize @comment
   end
 
   def update
-    @comment = Comment.find(params[:id])
      return unless @comment.update(comment_params)
       @product = @comment.product
       redirect_to @product
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
     authorize @comment
     @product = @comment.product
     @comment.destroy
     respond_to do |format|
       format.js
       format.html {redirect_to @product, notice: "Review Deleted Successfully"}
-      format.json {head :no_content}
     end
   end
 
   private
+
+  def find_comment
+    @comment = Comment.find(params[:id])
+  end
 
   def comment_params
     params.require(:comment).permit(:body, :user_id, images: [])
