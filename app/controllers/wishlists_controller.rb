@@ -1,7 +1,8 @@
 class WishlistsController < ApplicationController
+  before_action :authenticate_user!
+  before_action :find_user
 
   def show
-    @user = User.find(params[:user_id])
     if @user.wishlist != nil
       @product = @user.wishlist.products
     else
@@ -10,18 +11,15 @@ class WishlistsController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:user_id])
     @product = @user.wishlist.products.destroy(params[:product_id])
     redirect_to user_wishlist_path(@user)
   end
 
   def create
-    @user = User.find(params[:user_id])
     @wishlist = set_wishlist
     @product = Product.find(params[:wishlist][:product_id])
     authorize @product, :add?
     @add = @wishlist.products << @product
-
     redirect_to user_wishlist_path(@user)
   end
 
@@ -31,8 +29,12 @@ class WishlistsController < ApplicationController
     @wishlist = @user.wishlist || @user.create_wishlist(user_id: @user.id)
   end
 
+  def find_user
+    @user = User.find(params[:user_id])
+  end
   def wishlist_params
     params.require(:wishlist).permit(:user_id)
   end
 end
+
 

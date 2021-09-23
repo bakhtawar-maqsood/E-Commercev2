@@ -240,7 +240,8 @@ CREATE TABLE public.products (
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
     user_id bigint,
-    description text
+    description text,
+    searchable tsvector GENERATED ALWAYS AS ((setweight(to_tsvector('english'::regconfig, (COALESCE(name, ''::character varying))::text), 'A'::"char") || setweight(to_tsvector('english'::regconfig, COALESCE(description, ''::text)), 'B'::"char"))) STORED
 );
 
 
@@ -567,10 +568,45 @@ CREATE INDEX index_order_items_on_product_id ON public.order_items USING btree (
 
 
 --
+-- Name: index_orders_on_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_orders_on_status ON public.orders USING btree (status);
+
+
+--
 -- Name: index_orders_on_user_id; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX index_orders_on_user_id ON public.orders USING btree (user_id);
+
+
+--
+-- Name: index_products_on_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_products_on_name ON public.products USING btree (name);
+
+
+--
+-- Name: index_products_on_price; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_products_on_price ON public.products USING btree (price);
+
+
+--
+-- Name: index_products_on_searchable; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_products_on_searchable ON public.products USING gin (searchable);
+
+
+--
+-- Name: index_products_on_serial_no; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_products_on_serial_no ON public.products USING btree (serial_no);
 
 
 --
@@ -705,11 +741,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210912215105'),
 ('20210912215647'),
 ('20210912215736'),
-('20210916093345'),
 ('20210917074955'),
 ('20210917075335'),
-('20210922191249'),
-('20210923124858'),
-('20210923125033');
+('20210922191249');
 
 

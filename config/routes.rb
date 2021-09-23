@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :controllers
   devise_for :users
 
   resource :guest_carts, only: [:create, :show, :update]

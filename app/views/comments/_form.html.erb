@@ -1,4 +1,5 @@
 <%=form_with(model: [ @product, @product.comments.build ]) do |form| %>
+
   <div class="field">
     <%= form.label :image %>
     <%= form.file_field :images, multiple: true, direct_upload: true %>
