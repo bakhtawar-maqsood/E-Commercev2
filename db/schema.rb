@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_16_093345) do
+ActiveRecord::Schema.define(version: 2021_09_22_191249) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2021_09_16_093345) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string "commenter", null: false
     t.string "body", null: false
     t.bigint "product_id"
     t.bigint "user_id"
@@ -74,9 +73,9 @@ ActiveRecord::Schema.define(version: 2021_09_16_093345) do
     t.bigint "user_id"
     t.integer "total_cost", default: 0
     t.integer "status", default: 0
-    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["status"], name: "index_orders_on_status"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -88,6 +87,11 @@ ActiveRecord::Schema.define(version: 2021_09_16_093345) do
     t.datetime "updated_at", null: false
     t.bigint "user_id"
     t.text "description"
+    t.tsvector "searchable", default: -> { "(setweight(to_tsvector('english'::regconfig, (COALESCE(name, ''::character varying))::text), 'A'::\"char\") || setweight(to_tsvector('english'::regconfig, COALESCE(description, ''::text)), 'B'::\"char\"))" }
+    t.index ["name"], name: "index_products_on_name"
+    t.index ["price"], name: "index_products_on_price"
+    t.index ["searchable"], name: "index_products_on_searchable", using: :gin
+    t.index ["serial_no"], name: "index_products_on_serial_no", unique: true
     t.index ["user_id"], name: "index_products_on_user_id"
   end
 

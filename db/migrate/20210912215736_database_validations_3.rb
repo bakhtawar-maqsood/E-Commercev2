@@ -8,7 +8,6 @@ class DatabaseValidations3 < ActiveRecord::Migration[5.2]
     change_column :products, :price, :integer, :null => false
     add_column :products, :description, :text, :null => true
 
-    change_column :comments, :commenter, :string, :null => false
     change_column :comments, :body, :string, :null => false
   end
 end
