@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   before_action :authenticate_user!
   before_action :order_params, only: :create
-  before_action :find_user, only: [:update, :destroy, :create, :order_history]
+  before_action :find_user, only: %i[update destroy create order_history]
 
   def update
     registration = register_with_stripe_service
@@ -10,39 +12,50 @@ class OrdersController < ApplicationController
       redirect_to root_path, notice: msg
       EcommerceMailer.order_details(@user).deliver
     else
-      redirect_to root_path, notice: "Cant process at this time"
+      redirect_to root_path, notice: 'Cant process at this time'
     end
   end
 
   def show
     @user = current_user
     @order = @user.order_in_cart
-    if @order.present?
-      @order_items = @order.order_items
-    else
-      @order_items = nil
-    end
+    @order_items = (@order.order_items if @order.present?)
   end
 
   def create
     @product = Product.find(params[:order][:product_id])
     authorize @product, :add?
-    if !@user.orders.present?
-      @order = @user.orders.create(order_params)
-    elsif @user.order_in_cart
-      @order = @user.order_in_cart
+    set_order
+    add_order_item
+    if @order_item
+      redirect_to @product, notice: 'Added to Cart'
     else
-      @order = @user.orders.create(order_params)
+      redirect_to @product, notice: 'Something went wrong, try again'
     end
+  end
+
+  def set_order
+    @order = if @user.orders.blank?
+               @user.orders.create(order_params)
+             elsif @user.order_in_cart
+               @user.order_in_cart
+             else
+               @user.orders.create(order_params)
+             end
+  end
+
+  def add_order_item
     @order_item = @order.order_items.create(product_id: @product.id, quantity: params[:order][:quantity])
     @order_item.add_order_payment
-    redirect_to @product, notice: "Added to Cart"
   end
 
   def destroy
     @order_item = @user.order_in_cart.order_items.find_by(product_id: params[:product_id])
-    @order_item.destroy
-    redirect_to user_order_path(@user)
+    if @order_item.destroy
+      redirect_to user_order_path(@user), notice: 'Item Deleted'
+    else
+      redirect_to user_order_path(@user), notice: 'Something went wrong, try again'
+    end
   end
 
   def order_history
@@ -60,15 +73,11 @@ class OrdersController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
-
   def register_with_stripe_service
     StripeService.new({
-      email: params[:stripeEmail],
-      card: params[:stripeToken],
-      amount: params[:total_order_cost]
-    }).create_charge
+                        email: params[:stripeEmail],
+                        card: params[:stripeToken],
+                        amount: params[:total_order_cost]
+                      }).create_charge
   end
-
 end
-
-

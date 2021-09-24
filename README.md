@@ -17,7 +17,7 @@
 <ul>
   <li><strong>STEP 1:</strong> $ git clone https://github.com/bakhtawar-maqsood/E-Commercev2.git</li>
   <li><strong>STEP 2:</strong> $ bundle install</li>
-  <li><strong>STEP 3:</strong> $ rails db:create</li>
+  <li><strong>STEP 3:</strong> $ rails db:setup</li>
   <li><strong>STEP 4:</strong> $ rails server</li>
   <li><strong>STEP 5:</strong> $ run localhost:3000</li>
   <li><strong>STEP 6:</strong> Sign up and do whatever you want</li>

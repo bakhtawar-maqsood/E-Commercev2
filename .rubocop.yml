@@ -9,25 +9,37 @@ AllCops:
   TargetRubyVersion: 2.7
   TargetRailsVersion: 5.2
   Exclude:
-    - 'db/schema.rb'
+    - 'db/**/*'
     - 'node_modules/**/*'
     - 'vendor/bundle/**/*'
     - 'bin/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'config.ru'
 
+Style/ConditionalAssignment:
+  Enabled: false
+
+Lint/LiteralAsCondition:
+  Enabled: false
 Metrics/LineLength:
   Max: 120
 
 Metrics/MethodLength:
-  Max: 23
+  Max: 25
 
 Metrics/BlockLength:
   Exclude:
     - config/**/*
     - spec/**/*
+    - 'db/**/*'
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
+
+HasAndBelongsToMany:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false

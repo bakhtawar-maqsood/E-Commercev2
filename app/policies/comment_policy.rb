@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CommentPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
@@ -14,6 +16,6 @@ class CommentPolicy < ApplicationPolicy
   end
 
   def destroy?
-    user.id == record.user_id
+    edit?
   end
 end
