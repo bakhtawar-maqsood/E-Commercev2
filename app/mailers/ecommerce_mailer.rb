@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class EcommerceMailer < ApplicationMailer
   def price_changed(user)
     @user = user

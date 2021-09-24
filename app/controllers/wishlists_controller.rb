@@ -1,26 +1,27 @@
+# frozen_string_literal: true
+
 class WishlistsController < ApplicationController
   before_action :authenticate_user!
   before_action :find_user
 
   def show
-    if @user.wishlist != nil
-      @product = @user.wishlist.products
-    else
-      @product = nil
-    end
+    @product = @user.wishlist&.products
   end
 
   def destroy
-    @product = @user.wishlist.products.destroy(params[:product_id])
-    redirect_to wishlist_path
+    if @user.wishlist.products.destroy(params[:product_id])
+      redirect_to wishlist_path, notice: 'Deleted from Wishlist'
+    else
+      redirect_to wishlist_path, notice: 'Something went wrong'
+    end
   end
 
   def create
     @wishlist = set_wishlist
     @product = Product.find(params[:wishlist][:product_id])
     authorize @product, :add?
-    @add = @wishlist.products << @product
-    redirect_to wishlist_path
+    @wishlist.products << @product
+    redirect_to wishlist_path, notice: 'Added to wishlist'
   end
 
   private
@@ -32,9 +33,8 @@ class WishlistsController < ApplicationController
   def find_user
     @user = current_user
   end
+
   def wishlist_params
     params.require(:wishlist).permit(:user_id)
   end
 end
-
-

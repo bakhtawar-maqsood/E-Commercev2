@@ -2,6 +2,7 @@
 
 class CommentsController < ApplicationController
   before_action :find_comment, except: :create
+  before_action :find_product, only: %i[update destroy]
   before_action :authenticate_user!
 
   def create
@@ -9,9 +10,9 @@ class CommentsController < ApplicationController
     @comment = @product.comments.new(comment_params)
     authorize @comment
     if @comment.save
-      redirect_to product_path(@product)
+      redirect_to product_path(@product), notice: "Comment added in #{@product.name}"
     else
-      redirect_to product_path(@product), notice: "Did you try to upload file of any other type?"
+      redirect_to product_path(@product), notice: 'Something went wrong'
     end
   end
 
@@ -20,18 +21,22 @@ class CommentsController < ApplicationController
   end
 
   def update
-     return unless @comment.update(comment_params)
-      @product = @comment.product
-      redirect_to @product
+    if @comment.update(comment_params)
+      redirect_to @product, notice: 'comment updated successfully'
+    else
+      redirect_to @product, notice: 'Something went wrong in updating comment'
+    end
   end
 
   def destroy
     authorize @comment
-    @product = @comment.product
-    @comment.destroy
-    respond_to do |format|
-      format.js
-      format.html {redirect_to @product, notice: "Review Deleted Successfully"}
+    if @comment.destroy
+      respond_to do |format|
+        format.js
+        format.html { redirect_to @product, notice: 'Review Deleted Successfully' }
+      end
+    else
+      redirect_to @product, notice: 'Something went wrong in deleting comment'
     end
   end
 
@@ -41,8 +46,11 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
   end
 
+  def find_product
+    @product = @comment.product
+  end
+
   def comment_params
     params.require(:comment).permit(:body, :user_id, images: [])
   end
-
 end

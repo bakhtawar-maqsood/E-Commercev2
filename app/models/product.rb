@@ -17,7 +17,6 @@ class Product < ApplicationRecord
   validates :price, numericality: { greater_than: 3 }
   validate :image_type_validation
 
-
   after_update :email_to_wisher
 
   pg_search_scope :search_product,
@@ -28,11 +27,9 @@ class Product < ApplicationRecord
                     }
                   }
 
-
   def generate_serial_number
-    "PK-%.6d" % id
+    format('PK-%.6d', id)
   end
-
 
   def thumbnail(input)
     images[input].variant(resize: '200x200!').processed
@@ -52,13 +49,13 @@ class Product < ApplicationRecord
   # end
 
   def email_to_wisher
-    if :price_changed?
-      wishlist_data = self.wishlists.select(:user_id).pluck
-      wishlist_data.each do |data|
-        user_id = data[1]
-        @user_email = User.select(:email).find(user_id)
-        EcommerceMailer.price_changed(@user_email).deliver
-      end
+    return unless :price_changed?
+
+    wishlist_data = wishlists.select(:user_id).pluck
+    wishlist_data.each do |data|
+      user_id = data[1]
+      @user_email = User.select(:email).find(user_id)
+      EcommerceMailer.price_changed(@user_email).deliver
     end
   end
 end

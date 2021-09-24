@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProductPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
@@ -15,10 +17,5 @@ class ProductPolicy < ApplicationPolicy
 
   def add?
     user.id != record.user_id
-  end
-
-  def index
-    byebug
-    record&.first&.user_id == user.id || nil
   end
 end

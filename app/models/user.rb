@@ -9,16 +9,16 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  validates :name, :cnic, :address,:phone_no, presence: true
-  validates :phone_no, format: { with: /\d{4}-\d{7}/, message: "use xxxx-xxxxxxx format" }
-  validates :cnic, format: { with: /\d{5}-\d{7}-\d{1}/, message: "use xxxxx-xxxxxxxx-x format" }
+  validates :name, :cnic, :address, :phone_no, presence: true
+  validates :phone_no, format: { with: /\d{4}-\d{7}/, message: 'use xxxx-xxxxxxx format' }
+  validates :cnic, format: { with: /\d{5}-\d{7}-\d{1}/, message: 'use xxxxx-xxxxxxxx-x format' }
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
   def avatar_thumbnail
     if avatar.attached?
-      avatar.variant(resize: "50x50!").processed
+      avatar.variant(resize: '50x50!').processed
     else
-      "/default_avatar.jpg"
+      '/default_avatar.jpg'
     end
   end
 
@@ -30,4 +30,3 @@ class User < ApplicationRecord
     orders.where(status: 1).order(:created_at)
   end
 end
-

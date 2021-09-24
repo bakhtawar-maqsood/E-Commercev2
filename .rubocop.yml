@@ -1,38 +1,45 @@
-RSpec/FilePath:
-  Enabled: false
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-minitest
 
-Metrics/LineLength:
-  Max: 120
-
-Metrics/MethodLength:
-  Max: 20
-
-Documentation:
-  Enabled: false
 
 AllCops:
+  # Exclude auto-generated files by Rails
+  TargetRubyVersion: 2.7
+  TargetRailsVersion: 5.2
   Exclude:
     - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/bundle/**/*'
+    - 'bin/**/*'
     - 'config/**/*'
     - 'script/**/*'
-    - 'bin/**/*'
     - 'config.ru'
-  TargetRubyVersion: 2.4.9
-
-Style/BracesAroundHashParameters:
-  Enabled: false
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
 
 Style/ConditionalAssignment:
   Enabled: false
 
-Style/MutableConstant:
+Lint/LiteralAsCondition:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*
+    - spec/**/*
+    - 'db/**/*'
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+HasAndBelongsToMany:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false

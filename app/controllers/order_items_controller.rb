@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 class OrderItemsController < ApplicationController
   before_action :set_data, only: :update
   before_action :authenticate_user!, only: :update
 
   def update
-    if @action == "+"
+    if @action == '+'
       new_quantity = @quantity + 1
       new_total_cost = @total_cost + @price
     else
@@ -23,5 +25,4 @@ class OrderItemsController < ApplicationController
     @order_item = @order.order_items.find_by(product_id: @product_id)
     @quantity = @order_item.quantity
   end
-
 end
